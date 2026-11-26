@@ -1,0 +1,32 @@
+{
+  "name": "stocks-viewer-sample-plugin",
+  "author": "einar falcon",
+  "version": "0.0.1",
+  "private": true,
+  "pebble": {
+    "displayName": "SAMPLE Stocks Fixture (emulator only)",
+    "uuid": "5a3f9c2e-7b1d-4e8a-9c6f-0d2b4a6e8f13",
+    "sdkVersion": "3",
+    "usesPermissions": [],
+    "projectType": "plugin",
+    "plugin": {
+      "description": "Emulator test fixture: fixed SAMPLE quotes for finance/stock. Not real market data. Never publish.",
+      "script": "src/plugin.js",
+      "sources": [
+        {
+          "category": "finance",
+          "items": ["stock"],
+          "properties": {
+            "ticker": ["shortText"],
+            "name": ["shortText"],
+            "price": ["shortText", "longText"],
+            "day_change": ["shortText", "longText"],
+            "day_change_percent": ["shortText", "longText"]
+          },
+          "supportsMultiple": true,
+          "suggestedRefreshIntervalSec": 60
+        }
+      ]
+    }
+  }
+}

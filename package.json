@@ -1,0 +1,42 @@
+{
+  "name": "stocks-viewer",
+  "author": "einar falcon",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Stocks Viewer",
+    "uuid": "0eae95a4-1afe-4211-bf46-cc29f6695408",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "hello",
+      "status",
+      "err",
+      "count",
+      "updated",
+      "sample",
+      "sym[12]",
+      "name[12]",
+      "price[12]",
+      "chg[12]",
+      "pct[12]"
+    ],
+    "resources": {
+      "media": []
+    },
+    "usesPermissions": []
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
